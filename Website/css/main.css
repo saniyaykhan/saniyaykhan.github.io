@@ -3,6 +3,7 @@
 *{
   margin: 0;
 }
+
 html{
   background: linear-gradient(35deg, #CCFFFF, #FFCCCC, rgb(204, 204, 255));
   scroll-behavior: smooth;
