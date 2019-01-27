@@ -1,0 +1,270 @@
+<style>  
+
+*{
+  margin: 0;
+}
+html{
+  background: linear-gradient(35deg, #CCFFFF, #FFCCCC, rgb(204, 204, 255));
+  scroll-behavior: smooth;
+  width: 100%;
+  position: relative;
+  min-height: 100%;
+
+}
+
+  body {
+  background: linear-gradient(35deg, #CCFFFF, #FFCCCC, rgb(204, 204, 255));
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-size: cover;
+  height: 100%;
+}
+
+#container{
+  margin: 0 0 50px;
+}
+
+h1 {
+  font-size: 15px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #333333;
+}
+
+h1 a{
+    color: #333333;
+    text-decoration: none;
+}
+
+h2 {
+  font-size: 50px;
+  display: block;
+  padding-bottom: 100px;
+  font-family: 'Baloo Bhaijaan';
+  letter-spacing: 5px;
+  color: #5e4242;
+}
+
+h3{
+
+  font-family: 'Montserrat';
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+}
+
+p{
+  display: inline-block;
+  max-width: 55ch;
+  text-align: left;
+}
+
+header{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+  display: inline;
+}
+
+header h1{
+  margin-left: 40px;
+
+}
+
+header li{
+ font-size: 15px;
+ letter-spacing: 2px;
+ font-family: 'Montserrat';
+ text-transform: uppercase;
+ margin: 20px;
+ list-style-type: none;
+
+}
+
+header li a{
+  color: black;
+  text-decoration: none;
+
+}
+
+.outside{
+  padding:100px 0;
+  min-height:500px;
+}
+
+.about{
+  margin:0 auto;
+  background:#ccc;
+  padding-top:15px;
+  border-radius:5px;
+  width:50%;
+  font-family: "Montserrat";
+  height: 700px;
+
+
+}
+.console{
+  padding: 40px;
+  height: 620px;
+  margin: 0 auto;
+  background: #2c292d;
+  color: white;
+  text-align: left;
+  font-size: smaller;
+  font-family: "Courier New";
+ 
+}
+
+.console a{
+  color: #78dce8;
+  text-decoration: none;
+
+}
+
+.resume{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  }
+
+.project{
+  display: inline-block;
+  padding-bottom: 50px;
+  padding-top: 105px;
+}
+
+.desc{
+  margin: 20px;
+    background-color: white;
+    display: inline-block;
+}
+
+.desc p{
+      font-size: 14px;
+    padding: 25px;
+    padding-top: 0px;
+    text-align: left;
+    line-height: 24px;
+    display: block;
+}
+
+.project img{
+  width: 20%;
+}
+	
+	
+footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: black;
+  border-top: 2px solid black;
+
+}
+
+footer ul li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+.sub{
+  padding-top: 100px;
+  width: 100%;
+}
+
+.sub img{
+  width: 20%;
+}
+
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+p:not(:last-child) {
+  margin: 0 0 20px;
+}
+main {
+  max-width: 800px;
+  padding: 40px;
+  float: center;
+  text-align: left;
+  margin: auto;
+}
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  font-family: 'Montserrat';
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #333333;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label:hover {
+  color: #789;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #ff6188;
+  border: 1px solid #abc;
+  border-top: 2px solid #ff6188;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  label {
+    font-size: 0;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  label {
+    padding: 15px;
+  }
+}
+
+.new{
+  float:center;
+}
+
+</style>
