@@ -1,0 +1,20 @@
+@font-face {
+  font-family: G-Roboto-n7;
+  font-display: swap;
+  src: url('../data/fonts/roboto_v30_KFOlCnqEu92Fr1MmWUlvAx05IsDqlA.ttf');
+}
+@font-face {
+  font-family: G-Roboto-n3;
+  font-display: swap;
+  src: url('../data/fonts/roboto_v30_KFOlCnqEu92Fr1MmSU5vAx05IsDqlA.ttf');
+}
+@font-face {
+  font-family: "G-Source Sans Pro-n3";
+  font-display: swap;
+  src: url('../data/fonts/sourcesanspro_v21_6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zAkB1v_8CGxg.ttf');
+}
+@font-face {
+  font-family: "G-Open Sans-n7";
+  font-display: swap;
+  src: url('../data/fonts/opensans_v34_memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4nY1M2xLER.ttf');
+}
