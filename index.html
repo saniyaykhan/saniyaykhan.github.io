@@ -8,10 +8,38 @@
 <link rel="icon" href="pics/icon.png">
 <link rel = "stylesheet" href = "css/main.css">
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+	function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+window.onload = function() {
+openCity(event, 'London');
+var element = document.getElementById("defaultOpen");
+element.classList.add("active");
+
+};
+
+
+
+// Get the element with id="defaultOpen" and click on it
+</script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
 
 
 </head>
@@ -34,9 +62,9 @@
 <a id = "main">
   <div class = "sub">
     <br>
-    <img src = "pics/banner.png">
+    <img class="float-right" src = "pics/banner.png">
     <br><br>
-  <h2><strong>I'm a Designer, Developer, and Engineer</strong></h2>
+  <h2><strong>I'm a Data Analyst and Software Engineer </strong></h2>
 </a>
   </div>
 
@@ -47,13 +75,15 @@
 
 <div class = "about">
 <div class = "console">
-  <p><font color=#78dce8>class </font> <font color = #a9dc76> aboutMe</font>:</p><br><br>
- <p><i><font color=#78dce8>function </i></font> <font color = #a9dc76> name</font>(): <blockquote><font color = #ff6188>return</font> Saniya</blockquote></p>
- <p><i> <font color=#78dce8>function </i></font> <font color = #a9dc76> education</font>(): <blockquote><font color = #ff6188>return</font> Hofstra University</blockquote></p>
- <p><i> <font color=#78dce8>function </i></font> <font color = #a9dc76> expectedGraduation</font>(): <blockquote><font color = #ff6188>return</font> May 2019</blockquote></p>
- <p><i> <font color=#78dce8>function </i></font> <font color = #a9dc76> resume</font>(): <blockquote><font color = #ff6188>return</font><a href = "docs/resume.pdf"> resume.pdf</a></blockquote></p>
- <p><i> <font color=#78dce8>function </i></font> <font color = #a9dc76> socialMedia</font>(): <blockquote><font color = #ff6188>return</font> <a href = "https://twitter.com/sykhan97">twitter</a> + <a href = "https://www.instagram.com/sykhan97">instagram</a></blockquote></p>
- <p><i> <font color=#78dce8>function </i></font> <font color = #a9dc76> email</font>(): <blockquote><font color = #ff6188>return </font><a href = "mailto: skhan32@pride.hofstra.edu">skhan32@pride.hofstra.edu</a></blockquote></p>
+ <p><font color=#78dce8>saniya$</font> <font color = #a9dc76> cd about-me</font></p><br><br>
+ <p><font color=#78dce8>about-me saniya$</font> <font color = #a9dc76> current-job</font><blockquote><font color = #ff6188>>> Data Analyst at Mount Sinai</font></blockquote></p>
+ <p><font color=#78dce8>about-me saniya$</font> <font color = #a9dc76> education</font><blockquote><font color = #ff6188>>> Hofstra University</font></blockquote></p>
+ <p><font color=#78dce8>about-me saniya$</font> <font color = #a9dc76> major</font><blockquote><font color = #ff6188>>> Computer Science</font></blockquote></p>
+ <p><font color=#78dce8>about-me saniya$</font> <font color = #a9dc76> skills</font><blockquote><font color = #ff6188>>> Data Analysis, Front-end Development, Software Engineering </font></blockquote></p>
+ <p><font color=#78dce8>about-me saniya$</font> <font color = #a9dc76> tools</font><blockquote><font color = #ff6188>>> Python, SQL, HTML, CSS, Tableau, EPIC, Flask</font></blockquote></p>
+ <p><font color=#78dce8>about-me saniya$</font> <font color = #a9dc76> interests</font><blockquote><font color = #ff6188>>> Translating, Learning new languages, Visiting new cafes </font> </blockquote></p>
+ <p><font color=#78dce8>about-me saniya$</font> <font color = #a9dc76> email</font><blockquote><font color = #ff6188>>> </font><a href = "mailto: skhan32@pride.hofstra.edu">skhan32@pride.hofstra.edu</a></blockquote></p><br>
+
 </div>
 </div>
 </div>
@@ -68,102 +98,72 @@
 
 <div class = "new">
   <main>
-<input id="tab1" type="radio" name="tabs" checked>
-  <label for="tab1">Work Experience</label>
-
-  <input id="tab2" type="radio" name="tabs">
-  <label for="tab2">Education</label>
-
-  <input id="tab3" type="radio" name="tabs">
-  <label for="tab3">Skills</label>
-
-  <input id="tab4" type="radio" name="tabs">
-  <label for="tab4">University Activities</label>
-
-  <section id="content1">
-    <ul>
-  <div class = "ua">
-    <li><strong>Undergraduate Assistant, Hofstra University Accounts Payable: June 2018 – Present</strong></li>
-  <ul>
-  <li>Scanning and data entry for checks</li>
-  <li>Filing the check copies</li>
-  </ul>
-  </div>
-
-  <br>
-  <div class = "noi">
-    <li><strong>Network Operations Intern, Fibrenet International, LLC: May 2018 – August 2018</strong></li>
-  <ul>
-  <li>Supported network operations for Fibrenet international including creating customer accounts (wholesale clients, retail clients etc)</li>
-    <li>Created dial plans (providing the wholesale clients with unique prefix, check for IP addresses etc.) and improved the LCR (Least Cost Routing)
-using different algorithms to pick the cheapest route for a call to be made.</li>
-  <li>Tariffs (setting up the billing for the clients and providing them with balance upon request)</li>
-  <li> Supported accounts and network for Verizon, AT&T and other multinational companies.</li>
-  <li>Block unidentified IP addresses, and manage access IP address client addresses</li>
-  <li> Create Gateways between the server and the client by using their IP addresses and other setup.</li>
-  </ul>
-  </div>
-
-  <br>
-  <div class = "uam">
-    <li><strong>Undergraduate Assistant, Hofstra University Department of Mathematics:  July 2015 – January 2018</strong></li>
-  <ul>
-  <li>Assist the Chairperson, secretarial staff, and professors</li>
-    <li>Advise alumni, current and prospective students on inquiries related to the department, as well as
-protocols/procedures</li>
-  <li>Assist in the preparation of documents to be submitted to the Dean</li>
-  <li>Support productivity and maintenance of office organization</li>
-  </ul>
-    </div>
-  </ul> 
-    
-  </section>
-
-  <section id="content2">
-    <p>Bachelor of Science, Computer Science <br> <strong>Hofstra University</strong> <i> Hempstead, NY</i><br> Anticipated Graduation: May 2019</p>
-
-  </section>
-
-  <section id="content3">
-   <div id = "plang">
-  <h4>Programming Languages</h4>
-  <ul>
-  <li>Python</li>
-  <li>HTML & CSS</li>
-  <li>Javascript</li>
-  <li>C++</li>
-  <li>Java</li>
-  </ul>
+<div class="tab">
+  <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'London')" >Mount Sinai</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Precision Strategies</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Aavia</button>
+  <button class="tablinks" onclick="openCity(event, 'Lahore')">Hofstra University</button>
+  <button class="tablinks" onclick="openCity(event, 'New York')">Fibrenet International</button>
 </div>
 
-<div id = "tools">
-  <h4>Tools</h4>
+<div id="London" class="tabcontent">
+  <h4 class ="resume-title">Data Analyst @ Mount Sinai</h4>
+<li style="list-style-type: none;"><b> April 2021 - Present </li></b>
   <ul>
-  <li>Adobe Photoshop</li>
-  <li>Adobe InDesign </li>
-  <li>Git</li>
-  </ul>
-</div>
-<div id = "lang">
-  <h4> Languages</h4>
-  <ul>
-  <li>Urdu</li>
-  <li>Hindi</li>
-  <li>Spanish</li>
-  <li>Korean</li>
-  </ul>
-</div>
-    
-  </section>
+  <li>Built and ran reports by extracting EPIC Clarity data using Oracle SQL, Access, and Python for QI projects, grant renewals, research projects, and claims data</li><br>
+<li>Created QI project dashboard in Tableau and Excel for different stakeholders systemwide, presented my findings quarterly to committee, worked with primary care providers to increase lab work for the patients in program </li><br>
+<li>Developed and automated Tableau dashboards using SQL to support clinical and provider productivity daily</li><br>
+<li>Managed AIRS, eSHARE, ePACES databases as an administrator</li>
+</ul>
 
-  <section id="content4">
-    
-    <ul>
-   <li>Vice President, Founder of  SHE++: Hofstra Women in Computer Science:  Fall 2017</li>
-   <li>Vice Chairman, Computer Science Society, ACM-W: Spring 2016 – Spring 2017</li>
-   <li>Secretary and Public Relations, Muslim Student Association: Spring 2017 – Present</li>
- </ul>
-  </section>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h4 class ="resume-title">Data & Analytics Engineer @ Precision Strategies</h4>
+  <li style="list-style-type: none;"><b>February 2020 - July 2020</li></b>
+
+  <ul>
+  	<li>Built an internal facing web application’s front-end using Flask, HTML, CSS, Bootstrap, JS, d3, deployed on AWS EC2 instance with a Python back-end</li><br>
+	<li>Automated SQL queries to import data from the access voter files using Civis Analytics API in Python</li><br>
+	<li>Created report bug and error logging system for web application which automates emails to internal client</li><br>
+	<li>Streamed reading and writing of tweets into S3 bucket, analyzed tweets for user relationships using NetworkX centrality metrics in d3.js network graph and conversational analysis to identify top sentiments, keywords, links using IBM Watson NLU</li><br>
+	<li>Scripted ad-hoc tools for team’s analysts including geocode converter, web scraper, HTML table parser, and data visualizations in Plotly</li>
+</ul>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h4 class ="resume-title">Front End Web Developer @ Aavia</h4>
+  <li style="list-style-type: none;"><b> August 2019 - October 2019</li></b>
+  <ul>
+  	<li> Worked closely with the Head of Marketing on all the front end coding, front end frameworks, and design process using HTML, CSS, Javascript, Shopify, and Photoshop</li><br>
+<li>Redesigned the front-end for Aavia’s e-commerce website using HTML, SASS/CSS, jQuery, and Liquid</li><br>
+<li>Designed interactive mockups and tested website implementation and external forms using user testing</li><br>
+<li>Worked with Marketing Director to manage and execute digital campaigns into Shopify platform</li> <br>
+<li>Automated data from external forms into Omnisend email marketing lists by tag
+</li>
+</ul>
+</div>
+
+<div id="Lahore" class="tabcontent">
+  <h4 class ="resume-title">Assistant Program Manager @ Hofstra University</h4>
+  <li style="list-style-type: none;"><b> July 2015 - January 2018 </li></b>
+  <ul>
+  	<li>Responsible for the planning, coordination, and budgeting of $1M grant scholarship program</li><br>
+	<li>Managed 150 total students and administrated monthly meetings to ensure program status </li><br>
+	<li>Researched heavily on STEM education for Noyce conference presentations and research papers</li>
+</ul>
+</div>
+
+
+<div id="New York" class="tabcontent">
+  <h4 class ="resume-title">Network Operations Intern @ Fibrenet International, LLC</h4>
+  <li style="list-style-type: none;"><b> May 2018 - January 2018 </li></b>
+  <ul>
+  	<li>Assisted clients with gateway setup, network troubleshooting, and monitoring routes</li><br>
+	<li>Analyzed network data to check on the operational status of system and routes</li><br>
+	<li>Compiled weekly reports regarding provider information and client billing using Excel</li><br>
+</ul>
+</div>
   </main>
 </div>
 </div>
@@ -173,20 +173,20 @@ protocols/procedures</li>
 
 <div class = "project">
   <h3> Projects </h3>
-  <img src="https://media.wired.com/photos/5954825c5578bd7594c46383/master/w_1366,c_limit/bb88-story.jpg">
-  <div class = "desc">
- <p><strong>BB8 Project</strong> A project recreating BB8 from Star Wars. Our software team worked on programming BB8’s behaviors. We used Raspberry Pi’s to do this. I learned a lot during BB8, using Raspberry Pi’s, using Git, and working as a team with the engineering team.</p>
-</div><br>
-<img src = "pics/proj2.PNG">
+  <div class="row">
+  <div class="column">
+    <a style="text-decoration: none; color: #5e4242;" href = "proj1.html"><img src="pics/ux1.png" alt="Precision" style="width:100%"><h4>Advanced Analysis</h4></a>
+  </div>
+  <div class="column">
+    <a style="text-decoration: none; color: #5e4242;" href = "proj2.html"><img src="pics/aavia.png" alt="Aavia" style="width:100%">
+        <h4>Aavia</h4></a>
 
-<div class = "desc">
- <p><strong>Photo Analyzer</strong> A group project for our senior design project class inspired by our photography interest. The main focus of the application is to allow the user to see the trends in their own photography, as well as offer the novice photographer suggestions to help improve and grow their photography. Currently in development.</p>
+  </div>
+  <div class="column">
+    <a style="text-decoration: none; color: #5e4242;" href = "proj3.html"><img src="pics/expose2.png" alt="exPose" style="width:100%">
+    <h4>exPose</h4></a>
+  </div>
 </div>
-<br><br>
-<img src="pics/websitev1.PNG">
-  <div class = "desc">
- <p><strong>Personal Website v1</strong> In development of my personal website, many drafts were created. This is one of the drafts well liked among my peers.</p>
-</div><br>
 </div>
 </a>
  </body>
@@ -195,10 +195,9 @@ protocols/procedures</li>
  <footer>
   <div class = "social">
     <ul>
- <li><a href = "https://twitter.com/sykhan97"><img src = "pics/twitter.png"></a></li>
- <li><a href = "https://www.instagram.com/sykhan97"><img src = "pics/instagram.png"></a></li>
+
  <li><a href = "https://www.linkedin.com/in/saniya-khan-343157144"><img src = "pics/linkedin.png"></a></li>
- <li><a href = "https://github.com/sykhan97"><img src = "pics/github.png"></a></li>
+ <li><a href = "https://github.com/saniyaykhan"><img src = "pics/github.png"></a></li>
 </ul>
   
 </div>
